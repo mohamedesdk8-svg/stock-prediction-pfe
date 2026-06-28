@@ -30,6 +30,7 @@ Résumé :
 ================================================================================
 """
 
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -156,7 +157,7 @@ print(f"Training shape: {x_train.shape}")   # (m, 60, 7)
 # --- Ensemble de test (on remonte de 60 jours pour la 1re fenetre) ---
 test_data = scaled_data[training_data_len - 60:, :]
 x_test = []
-y_test = dataset[training_data_len:, 0].values     # prix de cloture reels (USD)
+y_test = dataset.iloc[training_data_len:, 0].values     # prix de cloture reels (USD)
 for i in range(60, len(test_data)):
     x_test.append(test_data[i-60:i, :])
 x_test = np.array(x_test)
@@ -267,6 +268,9 @@ grid_search_ridge.fit(x_train_2d, y_train)
 best_alpha_ridge = grid_search_ridge.best_params_['alpha']
 print(f"Best Alpha for Ridge: {best_alpha_ridge:.4f}")
 ridge_model_tuned = grid_search_ridge.best_estimator_
+ridge_predictions_tuned_scaled = ridge_model_tuned.predict(x_test_2d)
+plot_predictions('Ridge Regression (Tuned)', y_test, ridge_predictions_tuned_scaled,
+                 training_data_len, dataset, scaler)
 
 # --- Reglage du Lasso ---
 print("\nTuning Lasso...")
@@ -279,6 +283,9 @@ grid_search_lasso.fit(x_train_2d, y_train)
 best_alpha_lasso = grid_search_lasso.best_params_['alpha']
 print(f"Best Alpha for Lasso: {best_alpha_lasso:.6f}")
 lasso_model_tuned = grid_search_lasso.best_estimator_
+lasso_predictions_tuned_scaled = lasso_model_tuned.predict(x_test_2d)
+plot_predictions('Lasso Regression (Tuned)', y_test, lasso_predictions_tuned_scaled,
+                 training_data_len, dataset, scaler)
 
 # Parcimonie : nombre de coefficients exactement nuls
 n_zero = (np.abs(lasso_model_tuned.coef_) < 1e-10).sum()
@@ -298,6 +305,9 @@ grid_search_enet = GridSearchCV(ElasticNet(max_iter=20000),
 grid_search_enet.fit(x_train_2d, y_train)
 print(f"Best params Elastic Net: {grid_search_enet.best_params_}")
 enet_model_tuned = grid_search_enet.best_estimator_
+enet_predictions_tuned_scaled = enet_model_tuned.predict(x_test_2d)
+plot_predictions('Elastic Net Regression (Tuned)', y_test, enet_predictions_tuned_scaled,
+                 training_data_len, dataset, scaler)
 
 # =====================================================================
 #  (E) MODELE DE COMPARAISON NON LINEAIRE : RANDOM FOREST
