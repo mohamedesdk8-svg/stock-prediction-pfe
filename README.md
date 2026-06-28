@@ -3,7 +3,7 @@
 **PFE (Projet de Fin d'Études)** - Licence Sciences et Techniques, Mathématiques-Informatique
 
 **Université** : Abdelmalek Essaâdi (Faculté des Sciences et Techniques d'Al Hoceima)  
-**Auteurs** : Onex & AZARYAH Omar  
+**Auteurs** : ESSADDIKI Mohamed & AZARYAH Omar  
 **Encadrant** : Prof. Abdelatif HAFID  
 **Année** : 2025--2026  
 **Soutenance** : 24 juin 2026
