@@ -48,7 +48,7 @@ Ce projet implémente une **chaîne complète d'apprentissage statistique régul
 
 ### Option 1️⃣ : Google Colab (PLUS SIMPLE - Recommandé)
 
-1. Ouvrez ce lien : **[Ouvrir dans Google Colab](https://colab.research.google.com/)**
+1. Ouvrez ce lien : **[Ouvrir dans Google Colab](https://colab.research.google.com/){:target="_blank"}**
 2. Cliquez **File** → **Open notebook** → **GitHub**
 3. Collez : `https://github.com/mohamedesdK8-svg/stock-prediction-pfe`
 4. Sélectionnez `stock_prediction_pfe.py`
