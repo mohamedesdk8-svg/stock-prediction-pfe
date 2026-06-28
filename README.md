@@ -46,22 +46,36 @@ Ce projet implémente une **chaîne complète d'apprentissage statistique régul
 
 ## 🚀 Installation et Utilisation
 
-### Prérequis
+### Option 1️⃣ : Google Colab (PLUS SIMPLE - Recommandé)
+
+1. Ouvrez ce lien : **[Ouvrir dans Google Colab](https://colab.research.google.com/)**
+2. Cliquez **File** → **Open notebook** → **GitHub**
+3. Collez : `https://github.com/mohamedesdK8-svg/stock-prediction-pfe`
+4. Sélectionnez `stock_prediction_pfe.py`
+5. Exécutez les cellules (Shift + Enter)
+
+**Avantages** : Pas d'installation, tout en cloud ☁️
+
+---
+
+### Option 2️⃣ : Installation Locale
+
+#### Prérequis
 - Python 3.8+
 - pip
 
-### Étapes d'installation
+#### Étapes d'installation
 
 1. **Cloner le repository** :
 ```bash
-git clone https://github.com/your-username/stock-prediction-pfe.git
+git clone https://github.com/mohamedesdK8-svg/stock-prediction-pfe.git
 cd stock-prediction-pfe
 ```
 
-2. **Créer un environnement virtuel** (optionnel mais recommandé) :
+2. **Créer un environnement virtuel** :
 ```bash
 python -m venv venv
-source venv/bin/activate  # Sur Windows : venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 ```
 
 3. **Installer les dépendances** :
@@ -74,12 +88,7 @@ pip install -r requirements.txt
 python stock_prediction_pfe.py
 ```
 
-Le script téléchargera automatiquement les données historiques d'AAPL via **yfinance** et générera :
-- Graphiques de prédictions pour chaque modèle
-- Fichier `resultats_test.csv` avec les métriques de performance
-
 ---
-
 ## 📊 Méthodologie
 
 ### 1. **Données**
