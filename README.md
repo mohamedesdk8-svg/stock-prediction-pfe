@@ -184,11 +184,8 @@ Ce projet est soumis aux règles de l'Université Abdelmalek Essaâdi et est ré
 ## 📧 Contact
 
 Pour des questions ou clarifications :
-- **Encadrant** : Prof. Abdelatif HAFID
+- **Encadrant** : Prof. HAFID Abdelatif
 - **Jury** : 
-  - Présidente : Pr. Najat MORADI
-  - Examinateur : Pr. Omar DARHOUCHE
+  - Présidente : Pr. MORADI Najat
+  - Examinateur : Pr. DARHOUCHE Omar
 
----
-
-**Dernière mise à jour** : Juin 2026
