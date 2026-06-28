@@ -6,7 +6,7 @@
     des Rendements Boursiers (Application à l'action AAPL)
     
     PFE - Projet de Fin d'Études
-    Auteurs : [Onex], AZARYAH Omar
+    Auteurs : ESSADDIKI Mohamed, AZARYAH Omar
     Encadrant : Prof. Abdelatif HAFID
     Université Abdelmalek Essaâdi - Faculté des Sciences et Techniques d'Al Hoceima
     Année universitaire 2025--2026
